@@ -1,0 +1,77 @@
+.advantage {
+    padding: 80px 0 80px 0;
+    &__title {
+        color: #393939;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 44px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 570px;
+        height: 355px;
+        &_1 {
+            background: url('../img/advantage-bg1.jpg') center (center / cover) no-repeat
+        }
+        &_2 {
+            background: url('../img/advantage-bg2.jpg') center (center / cover) no-repeat
+        }
+        &_3 {
+            background: url('../img/advantage-bg3.jpg') center (center / cover) no-repeat
+        }
+        &_4 {
+            background: url('../img/advantage-bg4.jpg') center (center / cover) no-repeat
+        }
+        &_5 {
+            background: url('../img/advantage-bg5.jpg') center (center / cover) no-repeat
+        }
+        &_6 {
+            background: url('../img/advantage-bg6.jpg') center (center / cover) no-repeat
+        }        
+    }
+    &__shadow {
+        display: block;
+        min-height: 156px;
+        width: 100%;
+        padding-top: 40px;
+        background-color: rgba(0,0,0,0.44);
+    }
+    &__descr {
+        color: #ffffff;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+    }
+}
+@media (max-width: 991px) {
+    .advantage {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 767px) {
+    .advantage {
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .advantage {
+        &__shadow {
+            padding-top: 10px;
+        }
+    }
+}

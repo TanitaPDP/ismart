@@ -1,0 +1,87 @@
+.mainmenu {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 67px;
+    padding-top: 5px;
+    align-items: center;
+    list-style-type: none;
+    &__item {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-right: 47px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $main_color;
+            border-bottom: 1px solid $main_color;
+            border-top: 1px solid $main_color;
+
+        }
+    }
+}
+.hamberger {
+    display: none;
+}
+    
+@media (max-width: 991px){
+    .mainmenu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        transition: 0.6s all;
+        &_active {
+            left: 0;
+        }            
+        &_item {
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+        }            
+        &_link {
+            font-size: 20px;
+        }            
+    }        
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 10%;        
+        width: 30px;
+        height: 30px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 4px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }                    
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }                   
+            }
+        }
+    }
+}

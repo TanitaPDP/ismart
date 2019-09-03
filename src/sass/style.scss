@@ -1,0 +1,26 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+@import 'base/variables';
+@import 'base/media';
+
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+
+@import 'blocks/address';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/solution';
+@import 'blocks/carousel';
+@import 'blocks/advantage';
+@import 'blocks/storage';
+@import 'blocks/access';
+@import 'blocks/footer';
+@import 'blocks/pageup';
